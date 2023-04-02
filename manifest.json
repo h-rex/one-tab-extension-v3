@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Tab Info Extension",
+    "version": "1.0",
+    "description": "A Chrome extension that logs all open tab information to the console.",
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "tabs",
+      "storage"
+    ],
+    "action": {
+      "title": "Get Open Tabs"
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "Open Tabs Info"
+      }
+  }
+  
+  
